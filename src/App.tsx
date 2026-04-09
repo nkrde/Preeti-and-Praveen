@@ -64,6 +64,8 @@ export default function App() {
   const { scrollYProgress } = useScroll();
   const opacity = useTransform(scrollYProgress, [0, 0.2], [1, 0]);
   const scale = useTransform(scrollYProgress, [0, 0.2], [1, 0.95]);
+  const textY = useTransform(scrollYProgress, [0, 0.3], [0, 100]);
+  const backgroundY = useTransform(scrollYProgress, [0, 0.5], ["0%", "15%"]);
 
   const photos = [
     "https://vitreous-coral-e38slbgu2d.edgeone.app/on1.jpeg",
@@ -83,7 +85,10 @@ export default function App() {
       {/* --- Hero Section --- */}
       <section className="relative h-screen flex flex-col items-center justify-center overflow-hidden px-4">
         {/* Background Photo with Overlay */}
-        <div className="absolute inset-0 z-0">
+        <motion.div 
+          style={{ y: backgroundY }}
+          className="absolute inset-0 z-0 h-[120%] -top-[10%]"
+        >
           {/* Desktop Background (Large Screens) */}
           <img 
             src={photos[0]} 
@@ -99,10 +104,10 @@ export default function App() {
             referrerPolicy="no-referrer"
           />
           <div className="absolute inset-0 bg-linear-to-b from-wedding-cream/80 via-transparent to-wedding-cream" />
-        </div>
+        </motion.div>
 
         <motion.div 
-          style={{ opacity, scale }}
+          style={{ opacity, scale, y: textY }}
           className="text-center z-20"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}

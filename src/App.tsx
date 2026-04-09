@@ -95,7 +95,7 @@ export default function App() {
           <img 
             src={photos[7]} 
             alt="Preeti and Praveen" 
-            className="block lg:hidden w-full h-full object-cover opacity-50 object-[center_30%]"
+            className="block lg:hidden w-full h-full object-cover opacity-50 object-[center_15%]"
             referrerPolicy="no-referrer"
           />
           <div className="absolute inset-0 bg-linear-to-b from-wedding-cream/80 via-transparent to-wedding-cream" />
@@ -122,9 +122,9 @@ export default function App() {
           </p>
           
           <div className="flex flex-col items-center">
-            <h1 className="font-serif text-7xl md:text-9xl text-wedding-secondary mb-2 drop-shadow-sm">Preeti</h1>
+            <h1 className="font-serif text-7xl md:text-9xl text-wedding-secondary mb-2 drop-shadow-[0_4px_12px_rgba(216,27,96,0.2)]">Preeti</h1>
             <span className="font-script text-4xl md:text-5xl text-wedding-accent my-4">with</span>
-            <h1 className="font-serif text-7xl md:text-9xl text-wedding-secondary drop-shadow-sm">Praveen</h1>
+            <h1 className="font-serif text-7xl md:text-9xl text-wedding-secondary drop-shadow-[0_4px_12px_rgba(216,27,96,0.2)]">Praveen</h1>
           </div>
 
           <div className="mt-12 space-y-2">

@@ -431,7 +431,7 @@ export default function App() {
       </footer>
 
       {/* --- Developer Footer --- */}
-      <div className="py-8 px-4 border-t border-wedding-accent/10 bg-white/30 backdrop-blur-sm text-center">
+      <div className="py-8 px-4 border-t border-wedding-accent/10 bg-white/30 backdrop-blur-sm text-center mb-16 md:mb-0">
         <div className="max-w-4xl mx-auto">
           <p className="text-gray-500 text-sm mb-3 font-medium">
             Get Beautiful Website invitations for affordable price, in a day
@@ -455,17 +455,33 @@ export default function App() {
         </div>
       </div>
 
-      {/* --- Floating Action Button --- */}
-      <div className="fixed top-8 right-8 z-50">
+      {/* --- Navigation / Action Buttons --- */}
+      {/* Desktop: Top Right Button */}
+      <div className="fixed top-6 right-6 z-50 hidden md:block">
         <a 
           href="https://maps.app.goo.gl/bqEUEd784nbCcj4R8"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center gap-2 px-6 py-3 bg-wedding-accent text-white rounded-full shadow-2xl hover:bg-pink-700 transition-all hover:scale-105 active:scale-95 group"
+          className="flex items-center gap-1.5 px-4 py-2 bg-wedding-accent text-white rounded-full shadow-xl hover:bg-pink-700 transition-all hover:scale-105 active:scale-95 group"
         >
-          <MapPin className="w-5 h-5" />
-          <span className="font-bold text-sm tracking-wide">Location</span>
+          <MapPin className="w-4 h-4" />
+          <span className="font-bold text-xs tracking-wide">Location</span>
         </a>
+      </div>
+
+      {/* Mobile: Bottom Nav Bar */}
+      <div className="fixed bottom-0 left-0 right-0 z-50 md:hidden bg-wedding-cream/60 backdrop-blur-lg border-t border-wedding-accent/5 px-6 py-2 pb-safe">
+        <div className="flex justify-center items-center">
+          <a 
+            href="https://maps.app.goo.gl/bqEUEd784nbCcj4R8"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center justify-center gap-2 w-full max-w-[160px] py-2 bg-wedding-accent/10 text-wedding-accent rounded-full active:scale-95 transition-all font-bold text-xs tracking-widest uppercase"
+          >
+            <MapPin className="w-3.5 h-3.5" />
+            Location
+          </a>
+        </div>
       </div>
     </div>
   );

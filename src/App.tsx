@@ -456,7 +456,7 @@ export default function App() {
       </div>
 
       {/* --- Floating Action Button --- */}
-      <div className="fixed bottom-8 right-8 z-50">
+      <div className="fixed top-8 right-8 z-50">
         <a 
           href="https://maps.app.goo.gl/bqEUEd784nbCcj4R8"
           target="_blank"

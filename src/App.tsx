@@ -430,6 +430,31 @@ export default function App() {
         </div>
       </footer>
 
+      {/* --- Developer Footer --- */}
+      <div className="py-8 px-4 border-t border-wedding-accent/10 bg-white/30 backdrop-blur-sm text-center">
+        <div className="max-w-4xl mx-auto">
+          <p className="text-gray-500 text-sm mb-3 font-medium">
+            Get Beautiful Website invitations for affordable price, in a day
+          </p>
+          <div className="flex flex-wrap justify-center items-center gap-x-6 gap-y-2 text-xs font-semibold text-wedding-accent/60">
+            <a 
+              href="https://instagram.com/naveenkrdesign" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="hover:text-wedding-accent transition-colors flex items-center gap-1"
+            >
+              Instagram: @naveenkrdesign
+            </a>
+            <a 
+              href="tel:8217678293" 
+              className="hover:text-wedding-accent transition-colors flex items-center gap-1"
+            >
+              Phone: 8217678293
+            </a>
+          </div>
+        </div>
+      </div>
+
       {/* --- Floating Action Button --- */}
       <div className="fixed bottom-8 right-8 z-50">
         <a 
